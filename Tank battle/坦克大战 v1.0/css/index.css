@@ -1,37 +1,43 @@
 body{
     width: 100%;
-    height: 722px;
+    height: 887px;
+    overflow: hidden;
 }
 .main{
     width: 100%;
     height: 100%;
-    padding-top: 50px;
+    padding-top: 100px;
     background: url(../img/bg.png) no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
+    background-size: 100% 100%;
+    position: relative;
 }
 .main>h3{
     position: absolute;
-    left: 600px;
-    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 370px;
     font-size: 40px;
     font-weight: bold;
     font-family: "楷体";
-    color: #f00;
+    color: #ff1111;
     animation: sport 2s linear 0s infinite normal;
 }
 .main>#mydiv{
     text-align: center;
+}
+.main>#mydiv>canvas{
+    margin-top: 80px;
 }
 @keyframes sport{
     0%{
         color: #f00;
     }
     50%{
-        color: transparent;
+        color: rgba(100,5,5,0.5);
     }
     100%{
         color: #f00;
     }
 }
+
 
